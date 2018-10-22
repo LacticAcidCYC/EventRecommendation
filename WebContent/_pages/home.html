@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Item Recommendation">
+    <meta name="author" content="Eric">
+    <title>Item Recommendation Final</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./_css/main.css" type="text/css">
+    <script src="./_scripts/jquery-3.3.1.js"></script>
+</head>
+<body>
+<header class="top-header">
+    <nav class="top-nav">
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+    </nav>
+    <span id="welcome-msg">Welcome, Eric Chen</span>
+    <a id="logout-link" href="#">Logout</a>
+    <i id="avatar" class="avatar fas fa-user fa-2x"></i>
+</header>
+
+<div class="container">
+    <header>
+        <p>
+            <span>Item</span>
+            <br>Recommendation
+        </p>
+    </header>
+    <section class="main-section">
+        <!--login form-->
+        <div id="login-form">
+            <label for="username">Username:</label>
+            <input id="username" type="text">
+            <label for="password">Password:</label>
+            <input id="password" type="password">
+            <button id="login-btn">Login</button>
+            <p id="login-error"></p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p class="title">What We Do</p>
+    <p>"Help you find the best place around."</p>
+    <ul>
+        <li id="github">
+            <p>
+                <i class="fab fa-github fa-2x"></i>
+            </p>
+            <p><a href="https://github.com/LacticAcidCYC" target="_blank">LacticAcidCYC</a></p>
+        </li>
+        <li id="email">
+            <p>
+                <i class="far fa-envelope fa-2x"></i>
+            </p>
+            <p><a href="mailto:rsjcyc@gmail.com">rsjcyc@gmail.com</a></p>
+        </li>
+        <li id="blog">
+            <p>
+                <i class="fas fa-pencil-alt fa-2x"></i>
+            </p>
+            <p><a href="https://lacticacidcyc.github.io/" target="_blank">My Blog</a></p>
+        </li>
+    </ul>
+    <p id="copyright">&copy;2018 Eric Chen</p>
+</footer>
+<script src="https://rawgit.com/emn178/js-md5/master/build/md5.min.js"></script>
+<!-- <script src="./_scripts/modular.js"></script> -->
+<script src="./_scripts/main.js"></script>
+</body>
+</html>

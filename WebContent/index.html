@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Item Recommendation">
+        <meta name="author" content="Eric">
+        <title>Item Recommendation Final</title>
+        <link rel="shortcut icon" href="./images/favicon_64.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <!--<link rel="stylesheet" href="../_css/bootstrap.css" type="text/css">-->
+        <link rel="stylesheet" href="./_css/main.css" type="text/css">
+        <script src="./_scripts/jquery-3.3.1.js"></script>
+    </head>
+    <body>
+        <!--
+        <header class="top-header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Item Recommendation</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    </ul>
+                    <span class="navbar-text">
+                        Welcome, Eric Chen
+                    </span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <i class="avatar fa fa-user fa-2x"></i>
+                </div>
+            </nav>
+        </header>-->
+
+        
+        <header class="top-header">
+            <nav class="top-nav">
+                <a href="#">Home</a>
+                <a href="#">Contact</a>
+                <a href="#">About</a>
+            </nav>
+            <span id="welcome-msg">Welcome, Eric Chen</span>
+            <a id="logout-link" href="#">Logout</a>
+            <i id="avatar" class="avatar fas fa-user fa-2x"></i>
+        </header>
+
+        <div class="container">
+            <header>
+                <p>
+                    <span>Item</span>
+                    <br>Recommendation
+                </p>
+            </header>
+            <section class="main-section">
+                <!--login form-->
+                <div id="login-form">
+                    <label for="username">Username:</label>
+                    <input id="username" type="text">
+                    <label for="password">Password:</label>
+                    <input id="password" type="password">
+                    <button id="login-btn">Login</button>
+                    <p id="login-error"></p>
+                </div>
+                <aside id="item-nav">
+                    <div class="nav-icon">
+                        <i class="fas fa-sitemap fa-2x"></i>
+                    </div>
+                    <nav class="main-nav">
+                        <a href="#" id="nearby-btn" class="main-nav-btn active">
+                            <i class="fas fa-map-marker-alt fa-1.5x"></i>
+                            Nearby
+                        </a>
+                        <a href="#" id="fav-btn" class="main-nav-btn">
+                            <i class="fas fa-heart"></i>
+                            My Favorites
+                        </a>
+                        <a href="#" id="recommend-btn" class="main-nav-btn">
+                            <i class="fas fa-thumbs-up"></i>
+                            Recommendation
+                        </a>
+                    </nav>
+                </aside>
+                <ul id="item-list">
+                    <li class="item">
+                        <img alt="item image" src="https://s1.ticketm.net/dam/c/093/c74cfd95-af21-4e64-9f85-47677b951093_105651_TABLET_LANDSCAPE_16_9.jpg" width="80" height="80">
+                        <div>
+                            <a class="item-name" href="#">League of Legends - 2018 NA LCS 2 Day Summer Finals Event Ticket</a>
+                            <p class="item-category">Category: Sports</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                        </div>
+                        <p class="item-address">
+                            7000 Coliseum Way<br>
+                            Oakland
+                        </p>
+                        <div class="fav-link">
+                            <p>
+                                <i class="far fa-heart"></i>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <footer>
+            <p class="title">What We Do</p>
+            <p>"Help you find the best place around."</p>
+            <ul>
+                <li id="github">
+                    <p>
+                        <i class="fab fa-github fa-2x"></i>
+                    </p>
+                    <p><a href="https://github.com/LacticAcidCYC" target="_blank">LacticAcidCYC</a></p>
+                </li>
+                <li id="email">
+                    <p>
+                        <i class="far fa-envelope fa-2x"></i>
+                    </p>
+                    <p><a href="mailto:rsjcyc@gmail.com">rsjcyc@gmail.com</a></p>
+                </li>
+                <li id="blog">
+                    <p>
+                        <i class="fas fa-pencil-alt fa-2x"></i>
+                    </p>
+                    <p><a href="https://lacticacidcyc.github.io/" target="_blank">My Blog</a></p>
+                </li>
+            </ul>
+            <p id="copyright">&copy;2018 Eric Chen</p>
+        </footer>
+        <script src="https://rawgit.com/emn178/js-md5/master/build/md5.min.js"></script>
+        <!-- <script src="./_scripts/modular.js"></script> -->
+        <script src="./_scripts/main.js"></script>
+    </body>
+</html>
